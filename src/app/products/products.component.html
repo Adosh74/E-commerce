@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="col-4" *ngFor="let pro of product">
+    <a routerLink="product/{{pro.id}}">
+      <app-product-card [pro]="pro"></app-product-card>
+    </a>
+  </div>
+</div>
